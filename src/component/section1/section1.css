@@ -1,0 +1,287 @@
+.Navbar{
+
+    
+    height:5vmax;
+    display:flex;
+   
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.388);
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255));
+    position: sticky;
+    top: 0%;
+    z-index: 1000;
+
+}
+
+
+.left{
+    
+    width:20%;
+    height:100%;
+    display:flex;
+    padding:0px;
+    justify-content: center;
+    align-items: center;
+}
+.center{
+    
+    width:60%;
+    height:100%;
+    display: flex;
+
+    justify-content: space-evenly;
+
+
+}
+.right{
+
+    width:20%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.logo{
+
+    font-size: 2vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(14, 160, 170);
+    font-style: italic;
+  
+}
+
+.center_content{
+   text-decoration: none;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+   color: black;
+   font-size: 1.4vmax;
+
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   
+
+}
+
+.center_content:hover{
+    color:  rgb(14, 160, 170);
+    border-bottom: 2px solid  rgb(14, 160, 170);;
+}
+
+.right_img{
+    height:3vmax;
+}
+
+.section{
+    height:60vh;
+    background-image: url("https://www.progressivepolicy.org/wp-content/uploads/2021/02/PharmaReality.png");
+    background-size: cover;
+    display:flex;
+    
+    
+}
+
+.section_content{
+
+   
+    width:100%;
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+
+.section_content1{
+
+    font-size: 2.5vmax;
+    color: rgba(252, 233, 233, 0.937);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    filter: brightness(4);
+    margin : 2vmax;
+    
+
+}
+
+
+.section_content2{
+    
+    text-align: center;
+    font-size: 2.5vmax;
+    color: rgb(32, 101, 229);
+    margin-bottom: 0vh;
+
+}
+
+.section_content3{
+
+    margin: 0px;
+    text-align: center;
+    font-size: 2.5vmax;
+    color: rgb(32, 101, 229);
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-weight: 700;
+    filter: brightness(1);
+    
+}
+
+.section_content4{
+
+    margin-top:1vmax;
+    margin-bottom: 2vmax;
+    text-align: center;
+    font-size: 2.5vmax;
+    color: rgb(32, 101, 229);;
+    
+}
+
+
+.section_button{
+    background-image: linear-gradient(rgb(170, 175, 39),rgba(255, 242, 0, 0.909)
+    );
+    height:4vmax;
+    width:20vmax;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5vmax;
+}
+
+.section_button:hover{
+    
+    cursor:pointer;
+    
+}
+
+.products{
+
+    
+    background-image: radial-gradient(rgb(255, 255, 255),rgb(237, 237, 237));
+    
+
+}
+
+.products_heading{
+    text-align: center;
+    margin: 2vmax auto 4vmax auto;
+    border-bottom: 3px solid rgb(8, 189, 186);
+    font-size:2.5vmax;
+    width:40vmax;
+    padding:2vmax;
+
+
+}
+
+.products_container{
+    display:flex;
+    height:100%;
+    width:80vw;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+
+.product_info{
+    height:28vmax;
+    width:20vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    filter: drop-shadow(0 0 10px black);
+    background-image: linear-gradient(rgb(255, 129, 3),rgb(155, 92, 85));
+    transition: all 0.4s;
+    margin:2vmax;
+
+
+}
+.product_info:hover{
+
+    transform: translateY(-10px);
+    cursor:pointer;
+}
+.product_image{
+    height: 60%;
+    width:100%;
+}
+.product_name{
+    font-size: 1.4vmax;
+    margin-top: 1vmax;
+    margin-bottom: 0vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+}
+.product_count{
+    font-size: 1.4vmax;
+    margin:0.5vmax;
+    
+}
+.product_price{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2vmax;
+    font-weight: 500;
+    margin-top: 0.5vh;
+    margin-bottom: 1vmax;
+}
+.product_button{
+      height:2.5vmax;
+      width:80%;
+      font-size: 1.1vmax;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      border: none;
+      border-radius: 5px;
+      background-image: linear-gradient(rgb(89, 201, 227),rgb(79, 155, 159));
+}
+
+
+.product_button:hover{
+    cursor:pointer;
+}
+
+
+
+.explore_button_container{
+    width:100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:4vmax;
+}
+
+
+.explore_button{
+    height:2.5vmax;
+    width:20vw;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(rgb(89, 201, 227),rgb(79, 155, 159));
+    font-size: 1.2vmax;
+    transition: 0 0.4s;
+}
+.explore_button:hover{
+
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+footer{
+    margin-top:10vmax;
+    background-color: rgb(28, 54, 74);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    min-height: 35vh;
+
+    
+    
+}
+
+
+.footer1{
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 1vmax;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+.reacticon{
+
+    
+        color: white;
+        font-size: 1.5vmax;
+        margin: 1vmax;
+        cursor: pointer;
+    
+    
+
+}
+
+
+
+.footer2{
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+.footer2>h1{
+    font-size: 3.5vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 1vmax;
+    text-align: center;
+}
+.footer2>p{
+    font-size: 1.5vw;
+    margin: 0;
+}
+
+.footer3{
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    padding: 1vmax;
+    align-items: center;  
+}
+
+.footer1>h1{
+    font-size: 1.4vmax;
+    margin: 1vmax;
+    text-align: center;
+}
+.footer1>p{
+    font-size: 1.2vmax;
+    margin-bottom: 1vmax;
+    text-align: center;
+}
+.footer3>h1{
+    text-align: center;
+    font-size: 1.4vmax;
+    margin: 1vmax;
+}
+.footer3>p{
+    font-size: 1.3vmax;
+    margin-bottom: 1vmax;
+    text-align: center;
+}
+
+

@@ -1,0 +1,198 @@
+
+  .singleContainer {
+    
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    background-color: aliceblue;
+    .top{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      padding: 20px;
+      height:80%;
+      width:80%;
+      margin:2vmax auto;
+      background-image: linear-gradient(rgb(211, 128, 142),rgb(112, 212, 230));
+      color: white;
+      gap: 2vmax;
+      transition: 2s;
+      border: 1px solid black;
+      &:hover{
+         transition: 2s;
+         transform: scale(1);
+      }
+      .btn{
+         
+ 
+        height: 2.5vmax;
+        width: 40%;
+         button{
+             width: 100%;
+             height: 100%;
+             
+             color: antiquewhite;
+             border: 2.5px solid rgb(210, 193, 97);
+             border-radius: 10px;
+             font-size: 1.5vmax;
+             cursor: pointer;
+             background-color: rgb(237, 113, 138);
+         }
+      }
+   
+      
+    }
+   
+    .productcontainer{
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+    
+      width: 80%;
+     
+     
+    }
+    .productimg {
+      width: 182x;
+      height: 200px;
+      border-radius: 10px;
+      
+      object-fit: cover;
+    }
+   
+   
+    .productdetails{
+      margin:25px;
+      height: 80%;
+      width: 60%;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+   
+   
+    .detailItem1 {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+   
+      .itemKey1 {
+        font-weight: bold;
+         color: antiquewhite;
+        margin-right: 5px;
+        font-size: 25px;
+      }
+   
+      .itemValue1{
+        font-weight: 300;
+        font-size: 19px;
+      }
+   
+   
+      .bottom{
+          height: 60%;
+          display: flex;
+          align-items: center;
+          .left{
+              height: 80%;
+              width:15%;
+              text-align: center;
+              img
+              {
+                  height: 100%;
+                  width:  100%;
+                  object-fit: cover;
+                 
+              }
+          }
+         
+          .right{
+            
+              
+              display: flex;
+              
+              margin-left: 10px;
+              justify-content: center;
+              margin-left: 20px;
+             
+   
+              form{
+                  height: 28vh;
+                  width:50vw;
+                  display: flex;
+                  flex-direction: column;
+                  flex-wrap: wrap;
+                  justify-content: space-between;
+                  gap: 30px;
+                 
+                  
+   
+              }
+              .forminput{
+                  margin-left:2vw ;
+                  width: 40%;
+                  display: flex;
+                  margin-bottom: 15px;
+                  
+                  
+              }
+              label {
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+    
+                  .icon {
+                    cursor: pointer;
+                  }
+                }
+              input{
+                  width: 100%;
+                  padding: 5px;
+                  border: none;
+                  border-bottom: 1px solid gray;
+                  outline: none;
+              }
+              button {
+                  width: 150px;
+                  padding: 10px;
+                  border: none;
+                  background-color: teal;
+                  color: white;
+                  font-weight: bold;
+                  cursor: pointer;
+                  margin-top: 10px;
+                }
+                .buttondiv{
+                  height: 100%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                }
+          }
+      }
+   
+    
+  
+  }
+     
+  
+   .title1{
+     font-size: 2vmax;
+     text-align: center;
+     font-weight: 500;
+     font-style: italic;
+     color: rgb(71, 54, 54);
+   
+     
+     
+
+     
+     
+   }
+  
+   

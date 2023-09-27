@@ -1,0 +1,220 @@
+.placeorderpage{
+    display: flex;
+    padding: 2vmax;
+   
+    gap: 1vmax;
+    .address_cart{
+        display: flex;
+        flex-direction: column;
+        width: 70vw;
+        justify-content: center;
+        border: 0.5px solid black;
+        padding: 2vmax;
+        h1{
+            font-size: 1.5vmax;
+            display: flex;
+            justify-content: center;
+            margin: 2vmax;
+        }
+        .addressbox{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 4vmax;
+            border: 0.5px solid rgb(39, 38, 38);
+            background-color: azure;
+            padding: 0.5vmax;
+            
+            div{
+                display: flex;
+                gap: 1vmax;
+                margin-bottom: 1vmax;
+                h2{
+                    font-size: 1vmax;
+                    display: flex;
+                    align-items: center;
+                    font-weight: 700;
+                    
+                    width: 100%;
+                }
+                span{
+                    
+                    display: flex;
+                    align-items: center;
+                    font-size: 1vmax;
+                    font-weight: 500;
+                    width: 100%;
+                    justify-content: center;
+                }
+        
+            }
+        }
+        .cartitemspage{
+            width: 100%;
+            max-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            gap: 2vmax;
+            overflow-y: auto;
+            h1{
+                font-size: 1.5vmax;
+                display: flex;
+                justify-content: center;
+            }
+            .cartitems{
+                width: 80%;
+                margin: auto;
+                display: flex;
+                background-color:aliceblue;
+                height: 14vh;
+                padding: 1vmax;
+                box-sizing: border-box;
+                border-radius: 4px;
+              
+
+                
+              
+                .itemdetails{
+                    flex: 4;
+                    
+                    display: flex;
+                    gap: 2vmax;
+                    align-items: center;
+                    h2{
+                        font-size: 1vmax;
+                        
+                    }
+                    img{
+                        height: 8vh;
+                        width: 8vw;
+                       
+                    }
+                    .img_name{
+                        display: flex;
+                        gap: 1vmax;
+                        color: black;
+                        align-items: center;
+                        font-size: 1vmax;
+                    }
+                    .icons{
+                        cursor: pointer;
+                        margin-left:1vmax;
+                    }
+                    
+                }
+                .itemquantity{
+                    flex: 2;
+                    display: flex;
+                    align-items: center;
+                    gap: 1vmax;
+                    justify-content: center;
+                    input{
+                        outline: none;
+                        border: none;
+                        border-radius: 4px;
+                        width: 25%;
+                        height: 2vh;
+                        font-size: 1.5vh;
+                        box-sizing: border-box;
+                        padding: 1vmax;
+                        
+                    }
+                    button{
+                        font-size: 1.5vmax;
+                        border: 1px solid rgb(220, 62, 93);
+                        height: 2.5vmax;
+                        width: 2.5vmax;
+                        display: flex;
+                        background-color: transparent;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50px 50px;
+        
+                    }
+                    .buttongreen{
+                        font-size: 1.5vmax;
+                        border: 1px solid rgb(19, 136, 44);
+                        height: 2.5vmax;
+                        width: 2.5vmax;
+                        display: flex;
+                        background-color: transparent;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50px 50px;
+        
+                    }
+        
+                }
+        }
+        
+            .itemprice{
+        
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                span{
+                    font-size: 0.8vmax;
+                    margin-right: 0.5vmax;
+                    display: flex;
+                    gap: 1vmax;
+                    font-style: italic;
+
+                }
+            }
+        }
+    }
+    .total_amount{
+
+        width: 25vw;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        padding: 2vmax;
+        box-sizing: border-box;
+        gap: 2vmax;
+        height: 60vh;
+        align-items: center;
+        h1{
+            font-size: 1.5vmax;
+            display: flex;
+            justify-content: center;
+            font-weight: 100;
+            
+        }
+        div{
+            display: flex;
+            width: 80%;
+            margin: auto;
+            justify-content: space-between;
+            span{
+                font-size: 1vmax;
+                display: flex;
+                justify-content: center;
+                font-weight: 100;
+            }
+        }
+        h2{
+            font-size: 1.5vmax;
+            display: flex;
+            justify-content: center;
+            font-weight:none;
+            font-style: italic;
+        }
+        button{
+            border: none;
+            background-color: rgb(208, 55, 114);
+            font-size: 1vmax;
+            font-weight: 100;
+            color: white;
+            width: 70%;
+            border-radius: 4px;
+            height: 2.5vmax;
+            &:hover{
+                cursor: pointer;
+            }
+
+        }
+    }
+}

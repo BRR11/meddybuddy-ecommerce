@@ -1,0 +1,11 @@
+.listpage{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    .listcontainer{
+       width: 80%;
+       margin: auto;
+       margin-top: 2vmax;
+    }
+    
+}

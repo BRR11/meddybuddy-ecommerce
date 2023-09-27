@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;700;900&display=swap");
+
+.container {
+
+   
+    margin-top: 2vh;
+}
+
+.section-heading {
+    font-family: "Robotto";
+    font-weight: 700;
+    text-align: center;
+    font-size: 28px;
+    color: #183b56;
+    margin-bottom: 2vh;
+    
+}
+
+
+.wcu-card {
+
+    background-color: #E3F3F5;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e5eaf4;
+    border-radius: 16px;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+    padding: 2vmax;
+    box-sizing: border-box;
+
+}
+
+.wcu-card-heading {
+
+    font-family: "Robotto";
+    font-size: 20px;
+    color: #323f4b;
+    font-weight: 500;
+
+
+}
+
+.wcu-card-description {
+    font-family: "Robotto";
+    font-size: 16px;
+    color: #171714;
+    font-weight: 250;
+}
+
+.wcu-card-image {
+    border-radius: 20px;
+    padding: 7px;
+    height: 120px;
+    width: 140px;
+}
+
+.wcu-offer {
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+    color: #338DFF;
+}
+
+
+.wcu_cards{
+    display: flex;
+    height: 40vh;
+    width: 100vw;
+    gap: 2vw;
+    justify-content: center;
+    
+}
+
