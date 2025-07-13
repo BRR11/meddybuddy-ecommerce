@@ -38,7 +38,7 @@ function Placeorder() {
         
        
         
-             const res = await axios.post("http://localhost:4000/api/v1/payment", {
+             const res = await axios.post("https://meddybuddy-backend-clean.onrender.com/api/v1/payment", {
                 totalPrice
             },{
                
