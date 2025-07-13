@@ -5,7 +5,7 @@ const cartSlice = createSlice({
     name:"cart",
     initialState:{
         cartproducts: [],
-        shippingInfo:localStorage.getItem("shippingInfo")? JSON.parse(localStorage.getItem("shippingInfo")) : {},
+        shippingInfo:JSON.parse(localStorage.getItem('shippingInfo'))?JSON.parse(localStorage.getItem('shippingInfo')):{},
         
 
     },

@@ -1,5 +1,6 @@
 import React from 'react'
-import "/Users/rishanthreddy/Desktop/MERN APP/frontend/src/component/Footer/Footer.css"
+//import "/Users/rishanthreddy/Desktop/Meddy_Buddy/frontend/src/component/Footer/Footer.css"
+import "../Footer/Footer.css"
 import {BsTelephone} from "react-icons/bs"
 import {CgMail} from "react-icons/cg"
 function Footer() {

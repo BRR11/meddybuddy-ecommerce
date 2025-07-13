@@ -22,7 +22,7 @@ function Placeorder() {
     if (!isAuthentcated) {
       navigate('/login');
     }
-  }, [isAuthentcated, navigate]);
+  }, []);
     
 
     const placeOrder = async () => {
@@ -32,9 +32,9 @@ function Placeorder() {
             tax,
             totalPrice
         }
-       // sessionStorage.setItem("orderInfo",JSON.stringify(data));
+        sessionStorage.setItem("orderInfo",JSON.stringify(data));
         
-       
+       console.log("Hey");
         
        
         
@@ -48,7 +48,7 @@ function Placeorder() {
        
 
         const paymentorder = res.data.paymentorder;
-        //console.log(paymentorder);
+        console.log(paymentorder);
        
        const options = {
             "key" : "rzp_test_zMIzLEfR2oKln6",

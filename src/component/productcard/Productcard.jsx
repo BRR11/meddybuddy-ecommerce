@@ -19,6 +19,8 @@ function Productcard({product}) {
   const cartproducts = useSelector(state => state.cart.cartproducts);
 
 
+  const product_stock = product.stock;
+  console.log(product_stock);
     
   const submitHandler = ()=>{
     addItemsToCart(dispatch,user._id,productId,qty);
@@ -26,7 +28,37 @@ function Productcard({product}) {
    
 }
 
+    if(product_stock < 1)
+    {
+
+      return (
     
+        <div className='productcard'>
+         <Link className='link' style = {{textDecoration:"none"}}>
+         <div className="top">
+           <img src = {images[0]}  alt = "" className='img1'/>
+           <img src = {images[1]} alt = "" className='img2'/>
+         </div>
+ 
+         <div className="bottom">
+             <h2>{ product.name.length > 20 ? product.name.substring(0, 20) + '...' : product.name}</h2>
+            
+            <div className='price'>
+            
+            </div>
+         </div>
+         </Link>
+          
+           <div className='btn'>
+            <button>Out Of Stock</button>
+           </div>
+           
+        </div>
+    
+ 
+   )
+
+    }
   return (
     
        <div className='productcard'>

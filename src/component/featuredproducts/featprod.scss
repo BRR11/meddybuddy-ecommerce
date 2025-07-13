@@ -28,6 +28,8 @@
         justify-content: center;
         padding: 2vh;
         align-items: center;
+        max-height: 100vh;
+        overflow-y: auto;
     }
     .myLinkClass {
         text-decoration: none;
@@ -38,8 +40,10 @@
             border-radius: 5px;
             height: 4vh;
             margin: auto;
+            margin-top: 4vh;
             cursor: pointer;
-            font-size: 1.1rem;
+            font-size: 1.7vmax;
+            font-weight: bold;
             display: flex;
             justify-content: center;
             align-items: center;

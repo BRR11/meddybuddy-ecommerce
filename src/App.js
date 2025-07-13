@@ -20,6 +20,7 @@ import Placeorder from "./pages/orders/Placeorder"
 import Paymentsuccessfull from "./pages/orders/Paymentsuccessfull"
 import Myorders from "./pages/orders/Myorders"
 import Sidebar from "./component/Sidebar/Sidebar"
+import Vieworder from "./pages/orders/Vieworder.jsx"
 
 function App() {
  
@@ -27,6 +28,7 @@ function App() {
   const { isAuthentcated, user } = useSelector((state) => state.user);
   useEffect(() => {
     loadUser(dispatch);
+    
   
     
   }, [user])
@@ -38,11 +40,6 @@ function App() {
     
    <BrowserRouter>
          <Routes>
-         
-          <Route element = {isAuthentcated && <Useroptions user={user} />} />
-
-       
-          
           <Route path = "/" element = {<Home/>}/>
           <Route path = "/products" element = {<Products/>}/>
           <Route path = "/product/:id" element = {<Productdetails/>}/>
@@ -55,7 +52,7 @@ function App() {
           <Route path = "/confirmorder" element = {<Placeorder/>}/>
           <Route path = '/ordersuccessfull' element = {<Paymentsuccessfull/>}/>
           <Route path = "/myorders" element = {<Myorders/>}/>
-         
+          <Route path = "/order/:id" element = {<Vieworder/>} />
           <Route path = "/sidebar" element = {<Sidebar/>}/>
          </Routes>
          

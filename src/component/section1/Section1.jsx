@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import "/Users/rishanthreddy/Desktop/MERN APP/frontend/src/component/section1/section1.css"
+//import "/Users/rishanthreddy/Desktop/MERN APP/frontend/src/component/section1/section1.css"
+import "../section1/section1.css"
 import { Link } from 'react-router-dom'
 function Section1() {
 

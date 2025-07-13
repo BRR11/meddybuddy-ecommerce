@@ -6,162 +6,7 @@
     box-sizing: border-box;
     
 }
-.speedDial {
-    position: fixed;
-    right: 3vmax;
-    top: 3vmax;
-  }
-  
-  .speedDialIcon {
-    width: 56px;
-    height: 56px;
-    border-radius: 100%;
-  }
 
-.navBar{
-     height: 12vh;
-     border: 1px solid black;
-     display: flex;
-     justify-content: space-around;
-     border: none;
-     box-shadow: 10px 10px 10px rgb(101, 98, 98);
-     background-color: rgb(177, 229, 238);
-}
-.menuitem{
-    color: black;
-}
-.nav1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.ontoggle{
-    width: 8vw;
-    
-    display: flex;
-    justify-content: center;
-}
-
-.nav1>h2{
-    text-align: center;
-    font-size: 2vmax;
-    background: -webkit-linear-gradient(#eee, rgb(56, 43, 246));
-    -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-}
-.nav1>h2>span{
-    font-size: 2.5vmax;
-}
-
-.nav2{
-    display: flex;
-    align-items: center;
-   
-    
-    
-}
-.nav2>a{
-    color: rgba(38, 35, 35);
-    text-decoration: none;
-    margin: 2vmax;
-    font-size: 1.5vmax;
-    
-
-}
-.login{
-    display: none;
-}
-
-.nav2>a:hover{
-    
-    color: rgb(37, 37, 52);
-    transform: scale(1.05);
-    text-decoration: underline;
-    transition: 0.5s;
-}
-
-.nav3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-
-}
-.usericon{
-    font-size: 2.5vmax;
-}
-.usericon:hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-    cursor: pointer;
-}
-.hamburgermenu{
-    display: none;
-}
-.hamburgermenu:hover{
-    cursor: pointer;
-}
-
-@media (max-width: 700px){
-
-    .navBar{
-     height: 14vh;
-    border: 1px solid black;
-     display: flex;
-     justify-content: space-between;
-     border: none;
-     box-shadow: 10px 10px 10px rgb(101, 98, 98);
-     padding: 1vmax;
-     box-sizing: border-box;
-    }
-    .nav2{
-        display: none;
-    }
-    .usericon{
-        display: none;
-    }
-    .mobilenav2{
-        background-color: rgb(255, 255, 255);
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-        width: 80vw;
-        z-index: 99;
-        padding-left: 1rem;
-        min-height: 25vh;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-        position: absolute;
-        top:10vh;
-        left: 20vw;
-        
-    }
-    .mobilenav2>a{
-        color: rgba(38, 35, 35);
-        text-decoration: none;
-        margin: 2vmax;
-        font-size: 1.5vmax;
-        
-    
-    }
-    
-    .mobilenav2>a:hover{
-        
-        color: rgb(37, 37, 52);
-        transform: scale(1.2);
-        text-decoration: underline;
-        transition: 0.5s;
-    }
-    .login{
-        display: block;
-    }
-    .hamburgermenu{
-        display: block;
-        font-size: 2.5vmax;
-    }
-}
 
 
 
@@ -333,7 +178,22 @@
     text-align: center;
     color: #fff;
   
-    a {
+    a{
       color: #fff;
     }
   }
+
+
+
+  @media (max-width: 1200px){
+
+    
+   
+    .title-wrapper .sweet-title span {
+        font-size: 1.5vmax; /* Adjust this size as per your needs for smaller screens */
+    }
+    
+
+  }
+
+  

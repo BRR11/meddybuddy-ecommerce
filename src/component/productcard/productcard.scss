@@ -173,7 +173,43 @@
             }
            
         }
+
+       
     }
     
 
+}
+
+@media (max-width:1000px)
+{
+    .bottom{
+        h2{
+            font-size: 2vmax;
+        }
+        .totalratings{
+            .rating{
+                width: 4.5vw;
+                font-size: 1.5vmax;
+            }
+        }
+    }
+}
+
+
+@media (max-width:700px)
+{
+    .bottom{
+        h2{
+            font-size: 2vmax;
+        }
+        .totalratings{
+            .rating{
+                width: 5.5vw;
+                font-size: 1.5vmax;
+            }
+            .icons{
+                font-size: 1.5vmax;
+            }
+        }
+    }
 }

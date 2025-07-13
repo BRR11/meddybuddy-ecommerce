@@ -252,6 +252,7 @@
     padding: 2vmax;
     button{
         border: none;
+        font-size: 1.5vmax;
         border-radius: 4px;
         width: 15vw;
         height: 4vh;
@@ -269,7 +270,7 @@
     gap:4vmax;
     max-height: 70vh;
     overflow-y: auto;
-
+    
     padding: 2vmax;
     width: 60vw;
     margin: auto;
@@ -283,7 +284,7 @@
             font-weight: 500;
         }
         span{
-            font-size: 3.5vmax;
+            font-size: 2vmax;
             font-weight: bold;
             color: green;
         }
@@ -387,4 +388,212 @@
     }
     
 }
+
+@media (max-width:1000px)
+{
+
+
+    .top-div{
+        height: 80vh;
+        .top{
+            height: 80vh;
+            display: flex;
+            flex: none;
+            flex-direction: column;
+            .top-left{
+                height: 30vh;
+                flex: none;
+               
+                display: flex;
+
+                padding: 0px;
+                .top-left-1{
+                   display: none;
+                }
+                .top-left-2{
+    
+                    
+                        height: 30vh;
+                        width: 40vw;
+                        display: flex;
+                        align-items: center;
+                        
+
+                        .image{
+                            margin:none;
+                            height: 70%;
+                            width: 100%;
+                            object-fit: contain;
+                           
+                        }
+                       
+                       
+        
+                    
+                }
+            }
+            .top-middle{
+                height: 10vh;
+                width: 100%;
+                
+                display: flex;
+                gap: none;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 0px;
+            
+                .producthighlights{
+                   
+                  display: none;
+                }
+                h1{
+                    text-align: center;
+                    font-size: 2vmax;
+                }
+                .tm-rating{
+                    display: flex;
+                    justify-content: center;
+                    
+                    .smallrating{
+                        display: flex;
+                        justify-content: center;
+                        height: 3vmax;
+                        width: 4vw;
+
+                        
+                        span{
+                            font-size: 1.5vmax;
+                        }
+                        .smallicon{
+                            font-size: 1.5vmax;
+                        }
+                        
+                    }
+                    
+                    p{
+                        font-size: 1.5vmax;
+                    }
+                }
+            }
+
+            .top-right{
+                height: 35vh;
+              
+
+
+                .pricediv{
+                    width: 80%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    border: none;
+                    border-radius: 0vmax;
+                    -webkit-box-shadow:0px;
+                    -moz-box-shadow: 0px;
+                    box-shadow: none;
+                    
+                    
+                    
+                    .price{
+                        flex: 0.8;
+                        padding: 0.2vmax;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 0.1vmax;
+                        
+                        .mrp{
+                            font-size: 1.5vmax;
+                            display: flex;
+                            align-items: center;
+                            height: 1.5vmax;
+        
+                        }
+                        span{
+                            font-size: 2vmax;
+                            font-weight: 200;
+        
+                        }
+                    }
+                    .quantity{
+                        flex: 1;
+                        display: flex;
+                        gap: 0.2vmax;
+                        align-items: center;
+                        flex-direction: column;
+                        
+                        label{
+                            width: 50%;
+                            display: flex;
+                            font-size: 1vmax;
+                            justify-content: flex-start;
+                            
+                        }
+                        select{
+                            width: 50%;
+                            border: 0.5px solid rgb(39, 39, 39);
+                            outline: none;
+                            
+                            
+                            
+                        }
+                       
+                        p{
+                            font-size: 1.5vmax;
+                        }
+                        .mbtn{
+                            background-color: rgb(216, 21, 21);
+                            border: none;
+                            width: 1vmax;
+                            font-size: 0.5vmax;
+                            border-radius: 1vmax;
+                            
+                        }
+                        .pbtn{
+                            background-color: rgb(13, 130, 13);
+                            border: none;
+                            width: 1vmax;
+                            font-size: 1vmax;
+                            border-radius: 1vmax;
+                        }
+                       
+                        
+                    }
+                    .btn{
+                        width: 100%; 
+                        flex: 1;  
+                        display: flex;
+                        justify-content: center;
+                         button{
+                             width: 80%;
+                             margin: auto;
+                             border: none;
+                             border-radius: 0.5vmax;
+                             height: 2vmax;
+                             color: white;
+                             background-color: rgb(222, 81, 86);
+                             transition: 1s;
+                             font-size: 1.5vmax;
+                             &:hover{
+                                cursor: pointer;
+                                transition: 1s;
+                                transform: none;
+                             }
+                             
+                         }
+                }
+            }
+
+            }
+
+
+
+    
+        }
+    }
+    
+    
+}
+
    

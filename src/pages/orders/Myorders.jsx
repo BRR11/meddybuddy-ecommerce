@@ -17,7 +17,7 @@ function Myorders() {
     if (!isAuthentcated) {
       navigate('/login');
     }
-  }, [isAuthentcated, navigate]);
+  }, []);
   
   return (
     <div className='listpage'>

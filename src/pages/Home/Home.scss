@@ -4,7 +4,7 @@
 .container {
 
    
-    margin-top: 2vh;
+    margin-top: 4vh;
 }
 
 .section-heading {
@@ -18,63 +18,68 @@
 }
 
 
-.wcu-card {
+.wcu_cards {
 
-    background-color: #E3F3F5;
-    text-align: center;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #e5eaf4;
-    border-radius: 16px;
-    width: 25vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1vh;
-    padding: 2vmax;
-    box-sizing: border-box;
+   height: 50vh;
+   width: 100vw;
 
-}
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+  
 
-.wcu-card-heading {
-
-    font-family: "Robotto";
-    font-size: 20px;
-    color: #323f4b;
-    font-weight: 500;
-
-
-}
-
-.wcu-card-description {
-    font-family: "Robotto";
-    font-size: 16px;
-    color: #171714;
-    font-weight: 250;
-}
-
-.wcu-card-image {
-    border-radius: 20px;
-    padding: 7px;
-    height: 120px;
-    width: 140px;
-}
-
-.wcu-offer {
-    font-size: 16px;
-    font-weight: 500;
-    font-style: italic;
-    color: #338DFF;
-}
-
-
-.wcu_cards{
-    display: flex;
+   .wcu_content{
     height: 40vh;
-    width: 100vw;
-    gap: 2vw;
-    justify-content: center;
-    
+    width: 25vw;
+    background-color: rgb(213, 239, 235);
+    border-radius: 10px;
+
+
+    .wcu_image{
+        height: 50%;
+        img{
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+        }
+        margin-bottom: 1vh;
+    }
+
+    .wcu_bottom{
+        height: 50%;
+        padding: 1vmax;
+        .wcu_bottom_heading{
+            font-size: 1.5vmax;
+            font-family: bold;
+        }
+        .wcu_bottom_paragraph{
+            font-size: 1vmax;
+        }
+    }
+   }
+
+
+
+}
+
+@media (max-width:700px)
+{
+    .container{
+        height:140vh;
+    }
+    .wcu_cards{
+        display: flex;
+        flex-direction: column;
+        height: 120vh;
+        align-items: center;
+        
+
+    }
+    .wcu_content{
+        height:25vh;
+        margin: 2vh;
+       width: 40vw;
+    }
 }
 

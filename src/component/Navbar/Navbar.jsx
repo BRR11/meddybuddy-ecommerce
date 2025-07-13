@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Navigate } from 'react-router-dom'
 import "../Navbar/navbar.css"
 import {HiUserCircle} from "react-icons/hi"
 import {GiHamburgerMenu} from "react-icons/gi"
@@ -36,7 +36,10 @@ function Navbar() {
     
     
     logoutUser(dispatch);
+    
+  
   }
+
   if(isAuth)
   {
     return (
@@ -44,19 +47,18 @@ function Navbar() {
       <div className = "Navbar">
     
       <div className="left">
-      <section class="productsheader">
-      <div class="title-wrapper">
-       <h1 class="sweet-title">
-      <span data-text="MEDDY">MEDDY</span>
-      <span data-text="BUDDY">BUDDY</span>
-    </h1>
-    <span class="top-title"></span>
-    <p class="bottom-title"></p>
-    </div>
-</section>
+          <section className="productsheader">
+            <div className="title-wrapper">
+                 <h1 className="sweet-title">
+                  <span data-text="MEDDY">MEDDY</span>
+                  <span data-text="BUDDY">BUDDY</span>
+                </h1>
+   
+             </div>
+          </section>
       </div>
 
-       <div class="center">
+       <div className="center">
         <Link  className = "center_content" to = "/">
             HOME
         </Link>
@@ -119,19 +121,18 @@ function Navbar() {
       <div className = "Navbar">
     
         <div className="left">
-        <section class="productsheader">
-      <div class="title-wrapper">
-       <h1 class="sweet-title">
+        <section className="productsheader">
+      <div className="title-wrapper">
+       <h1 className="sweet-title">
       <span data-text="MEDDY">MEDDY</span>
       <span data-text="BUDDY">BUDDY</span>
     </h1>
-    <span class="top-title"></span>
-    <p class="bottom-title"></p>
+   
     </div>
 </section>
         </div>
 
-         <div class="center">
+         <div className="center">
           <Link  className = "center_content" to = "/">
               HOME
           </Link>

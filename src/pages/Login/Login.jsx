@@ -5,7 +5,6 @@ import { useState ,useEffect} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCartFromDB, loginUser } from '../../redux/apicalls';
 import { Link, useNavigate } from 'react-router-dom';
-//import { fetchCartFromDB } from '../../redux/apicalls';
 
 function Login() {
     const dispatch = useDispatch();
@@ -22,7 +21,7 @@ function Login() {
         if(isAuthenticateduser)
         {
            fetchCartFromDB(dispatch,user._id);
-           
+          
            navigate("/");
         }
            
@@ -30,6 +29,7 @@ function Login() {
        }, [dispatch,isAuthenticateduser])
 
    const navigate = useNavigate();
+   
     const handleClick = async (e) => {
       e.preventDefault();
      

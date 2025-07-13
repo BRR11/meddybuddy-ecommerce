@@ -10,6 +10,7 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
+import { getProductDetails } from '../../redux/apicalls';
 function Cart() {
 
 
@@ -18,7 +19,7 @@ function Cart() {
     const navigate = useNavigate();
 
     const {isAuthentcated,user} = useSelector(state => state.user);
-  
+    const {isFetching,error,product} = useSelector((state) => state.productdetails)
   
 
     useEffect(() => {
@@ -26,6 +27,10 @@ function Cart() {
         navigate('/login');
       }
     }, [isAuthentcated, navigate]);
+
+  
+    
+  
   
     const increaseQuantity = (id, quantity, stock) => {
         const newQty = quantity + 1;
@@ -55,6 +60,7 @@ function Cart() {
        
       }
 
+
       
       
   return (
@@ -73,6 +79,7 @@ function Cart() {
     <div className = "cartitemspage">
 
         {cartproducts && cartproducts.map((product) => (
+       
              <div className='cartitems' key = {product.productId}>
              <div className='itemdetails'>
                 <div>
@@ -90,6 +97,11 @@ function Cart() {
            
             </div>
             <div className='itemquantity'>
+
+            {product.stock < 1 ? (
+        <span className="out-of-stock">Out of Stock</span>
+      ) : (
+        <>
                 <button
                 onClick={() =>
                     decreaseQuantity(
@@ -102,6 +114,8 @@ function Cart() {
                           product.productId,
                           product.quantity,
                           product.stock)}>+</button>
+        </>
+      )}
 
             </div>
             <div className='itemprice'>

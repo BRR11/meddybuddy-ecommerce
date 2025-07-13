@@ -12,7 +12,7 @@ import SelectInput from '@mui/material/Select/SelectInput'
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 
 
-const categories = ["protein and vitamins","Diabetes","Healthcare Devices","Personal Care","Ayurveda Products","Homeopathy","Covid Essentials"]
+const categories = ["Protein and Vitamins","Diabetes","Healthcare Devices","Personal Care","Ayurveda Products","Homeopathy","Covid Essentials"]
 const priceFilters = [[1, 100], [1, 1000], [1, 5000], [1, 10000]];
 
 function Products({match}) {
@@ -23,6 +23,7 @@ function Products({match}) {
     const [price,setPrice] = useState([1,20000])
     const [input,setInput] = useState("");
     const [category,setCategory] = useState("");
+    
     useEffect(() => {
       
         getAllProducts(dispatch,keyword,currentPage,price,category)
@@ -37,17 +38,43 @@ function Products({match}) {
       setkeyword(input);
     }
   
-    const [sidebarOpen, setSidebarOpen] = useState(false);
-
-  const handleSidebarToggle = () => {
-    setSidebarOpen(!sidebarOpen);
-  };
-
   const [selectedPriceFilter, setSelectedPriceFilter] = useState("");
 
   const handlePriceFilterClick = (priceFilter) => {
-    setPrice(priceFilter);
-    setSelectedPriceFilter(priceFilter);
+    if(priceFilter[0] == price[0] && priceFilter[1] == price[1])
+    {
+      
+      setPrice([1,20000]);
+      setSelectedPriceFilter("");
+      setCurrentPage(1);
+      setkeyword("");
+    }
+    else
+    {
+     
+      setPrice(priceFilter);
+      setSelectedPriceFilter(priceFilter);
+      setCurrentPage(1);
+      setkeyword("");
+    }
+    console.log("abc");
+    
+  };
+  const handleCategory = (index) => {
+    if(index == category)
+    {
+     
+      setCategory("");
+      setkeyword("");
+      setCurrentPage(1);
+    }
+    else
+    {
+      setCategory(index);
+      setCurrentPage(1);
+      setkeyword("");
+    }
+   
   };
     
   return (
@@ -81,7 +108,7 @@ function Products({match}) {
           <h1>Shop By Category</h1>
         {
           categories.map((index) => (
-            <li className={`category_link ${index === category ? 'selected' : ''}`} key = {index} onClick={()=> setCategory(index)}>
+            <li className={`category_link ${index === category ? 'selected' : ''}`} key = {index} onClick={()=> handleCategory(index)}>
               {index}
             </li>
           ))
@@ -92,7 +119,7 @@ function Products({match}) {
           <h1>Filter By Price</h1>
           {
           priceFilters.map((priceFilter, index) => (
-            <li className={`pricefilterlink ${selectedPriceFilter === priceFilter ? 'selected' : ''}`} key = {index} onClick={()=> handlePriceFilterClick(priceFilter)}>
+            <li className={`pricefilterlink ${selectedPriceFilter == priceFilter  ? 'selected' : ''}`} key = {index} onClick={()=> handlePriceFilterClick(priceFilter)}>
               less than ₹{priceFilter[1]}
             </li>
           ))

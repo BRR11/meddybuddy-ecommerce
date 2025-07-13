@@ -51,12 +51,11 @@ function Productdetails({match}) {
      }, [dispatch,productId,product])
     
      const [images, setImages] = useState([]);
-     const  [img,setImg] = useState(1);
+     const  [img,setImg] = useState();
 
      useEffect(() => {
        if (!isFetching && product) {
          if (product.images && product.images.length > 0) {
-           // Use the first image from the 'product' data as the initial image
            setImages(product.images);
            setImg(product.images[0]);
          }
@@ -67,12 +66,8 @@ function Productdetails({match}) {
      
    
     
-    const hoverHandler = (image,i)=>{
-        setImg(image);
-    }
-    const hoverHandler1 = (image,i) => {
-        setImg(image);
-    }
+    
+   
 
   
     const [qty,setQty] = useState(1);
@@ -81,8 +76,8 @@ function Productdetails({match}) {
         
     }
     const submitHandler = ()=>{
-        addItemsToCart(dispatch,productId,qty);
-        localStorage.setItem("cartproducts",JSON.stringify(cartproducts))
+        addItemsToCart(dispatch,user._id,productId,qty);
+      
        
     }
 
@@ -114,15 +109,31 @@ function Productdetails({match}) {
         setOpen(false);
       };
     
-     
-   /* useEffect(() => {
-        if(cartproducts.length != 0)
-     
+      const [timerId, setTimerId] = useState(null);
+
     
-      
-    }, [dispatch,cartproducts])*/
+    const handleMouseEnter = (newImage) => {
+      setImg(newImage);
+  
+      if (timerId) {
+        clearTimeout(timerId);
+      }
+  
+      const newTimerId = setTimeout(() => {
+        setImg(product.images[0]); // Reset to the first image
+      }, 1000);
+  
+      setTimerId(newTimerId);
+    };
+  
+    useEffect(() => {
+      return () => {
+        if (timerId) {
+          clearTimeout(timerId);
+        }
+      };
+    }, [timerId]);
     
-   
   return (
     
     <div>
@@ -139,7 +150,7 @@ function Productdetails({match}) {
 
                     {
                         images.map((image,i) => (
-                            <div className='img_wrap' key = {i} onMouseEnter={() => setImg(image)}>
+                            <div className='img_wrap' key = {i} onMouseEnter={() => handleMouseEnter(image)}>
                                 <img src = {image} alt = ""/>
                             </div>
                         ))
@@ -148,25 +159,7 @@ function Productdetails({match}) {
 
 
                 <div className='top-left-2'>
-                <ReactImageMagnify 
-                        {...{
-                            smallImage: {
-                                alt: 'Wristwatch by Ted Baker London',
-                                isFluidWidth: true,
-                                src: img,
-                                
-                            },
-                            largeImage: {
-                                src: img,
-                                width: 1200,
-                                height: 1800,
-                            },
-                            enlargedImageContainerDimensions: {
-                                width: '150%',
-                                height: '150%',
-                            },
-                        }}
-                    />
+                    <img src = {img} className='image'/>
                 </div>             
              
             </div>
@@ -201,11 +194,9 @@ function Productdetails({match}) {
 
                             <select name="qunatity" id="quantity" onChange={handleChange}>
                                  
-                                 <option value = "1">1</option>
-                                 <option value = "2">2</option>
-                                 <option value = "3">3</option>
-                                 <option value = "4">4</option>
-                                 <option value = "5">5</option>
+                            {Array.from({ length: product.stock }, (_, index) => (
+        <option key={index + 1} value={index + 1}>{index + 1}</option>
+      ))}
 
                                 
                             </select>

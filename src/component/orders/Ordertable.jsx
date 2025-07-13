@@ -26,9 +26,7 @@ const orders = useSelector(state => state.myorders.myorders);
 
 
  
-  const handleDelete = (id) => {
-    //setData(data.filter((item) => item.id !== id));
-  };
+
 
   const actionColumns = [
     {
@@ -72,7 +70,11 @@ const orders = useSelector(state => state.myorders.myorders);
     {
         field: "createdAt",
       headerName: "Order on",
-      width: 140,
+      width: 200,
+      valueGetter: (params) => {
+        const date = new Date(params.value); // Convert to date object
+        return date.toLocaleDateString();    // Convert to string format: MM/DD/YYYY
+    }
     },
 
   ];
@@ -90,7 +92,7 @@ const orders = useSelector(state => state.myorders.myorders);
         pageSize={9}
         rowsPerPageOptions={[9]}
         getRowId={(row) => row._id}
-        checkboxSelection
+        
       />
     </div>
   );

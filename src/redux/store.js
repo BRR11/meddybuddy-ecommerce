@@ -7,6 +7,10 @@ import userReducer from "./userReducer";
 import cartReducer from "./cartReducer";
 import createorderReducer from "./orderReducer"
 import myordersReducer from "./myordersReducer";
+import { persistStore, persistReducer } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
+
+
 const rootReducer = combineReducers(
     {
         products:productReducer,
@@ -21,7 +25,7 @@ const rootReducer = combineReducers(
 
 
 
-const middleware = [thunk];
+
 
 export const store = configureStore({
 

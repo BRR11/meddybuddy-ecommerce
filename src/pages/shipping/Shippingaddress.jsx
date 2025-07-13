@@ -33,6 +33,18 @@ function Shippingaddress() {
     
     
     save_Shipping_Info(dispatch,{ address, city, state, country, pinCode, phoneNo });
+
+    const shippingInfo = {
+      address,
+      city,
+      state,
+      country,
+      pinCode,
+      phoneNo
+  };
+
+  localStorage.setItem('shippingInfo', JSON.stringify(shippingInfo));
+
     navigate("/confirmorder");
     
   };
