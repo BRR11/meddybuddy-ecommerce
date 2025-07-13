@@ -39,10 +39,7 @@
     "sass": "^1.63.6",
     "scss": "^0.2.4",
     "slick-carousel": "^1.8.1",
-<<<<<<< HEAD
     "styled-components": "^5.3.11",
-=======
->>>>>>> bc0f9c8 (Final frontend deployment)
     "web-vitals": "^2.1.4",
     "webfontloader": "^1.6.28"
   },
