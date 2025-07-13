@@ -1,5 +1,5 @@
 {
-  "name": "frontend", 
+  "name": "frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,7 +20,6 @@
     "overlay-navbar": "^1.2.3",
     "razorpay": "^2.9.1",
     "react": "^18.2.0",
-    "react-alert": "^7.0.3",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.10.1",
@@ -39,10 +38,7 @@
     "sass": "^1.63.6",
     "scss": "^0.2.4",
     "slick-carousel": "^1.8.1",
-<<<<<<< HEAD
     "styled-components": "^5.3.11",
-=======
->>>>>>> bc0f9c8 (Final frontend deployment)
     "web-vitals": "^2.1.4",
     "webfontloader": "^1.6.28"
   },
