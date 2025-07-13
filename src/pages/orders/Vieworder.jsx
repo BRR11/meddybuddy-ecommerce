@@ -30,7 +30,7 @@ const [cartproducts, setCartProducts] = useState([]);
 
 const fetchData = async () => {
   try {
-    const res = await axios.get(`http://localhost:4000/api/v1/order/${id}`, {
+    const res = await axios.get(`https://meddybuddy-backend-clean.onrender.com/api/v1/order/${id}`, {
       withCredentials: true
     });
     console.log(res);
