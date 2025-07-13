@@ -12,6 +12,8 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "ajv": "^8.17.1",
+    "ajv-keywords": "^5.1.0",
     "axios": "^1.4.0",
     "country-state-city": "^3.1.4",
     "icons": "^1.0.0",
@@ -37,7 +39,10 @@
     "sass": "^1.63.6",
     "scss": "^0.2.4",
     "slick-carousel": "^1.8.1",
+<<<<<<< HEAD
     "styled-components": "^5.3.11",
+=======
+>>>>>>> bc0f9c8 (Final frontend deployment)
     "web-vitals": "^2.1.4",
     "webfontloader": "^1.6.28"
   },

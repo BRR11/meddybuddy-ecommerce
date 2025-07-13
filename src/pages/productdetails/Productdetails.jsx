@@ -1,27 +1,24 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import "../productdetails/productdetails.scss";
 import Navbar from "../../component/Navbar/Navbar";
 import Footer from '../../component/Footer/Footer';
 import StarRateIcon from '@mui/icons-material/StarRate';
 import LinearProgress from '@mui/material/LinearProgress';
 import ReactImageMagnify from 'react-image-magnify';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux/es/hooks/useSelector';
 import { useDispatch } from 'react-redux';
-import { getProductDetails } from '../../redux/apicalls';
+import { getProductDetails, addItemsToCart, newReview } from '../../redux/apicalls';
 import Reviewcard from '../../component/reviewcard/Reviewcard';
-import { addItemsToCart } from '../../redux/apicalls';
-import { newReview } from '../../redux/apicalls';
+
 import {
     Dialog,
     DialogActions,
     DialogContent,
     DialogTitle,
     Button,
-  } from "@material-ui/core";
-
-  import { Rating } from "@material-ui/lab";
-  import { useNavigate } from 'react-router-dom';
+    Rating,
+} from "@mui/material";
 
 
 function Productdetails({match}) {
