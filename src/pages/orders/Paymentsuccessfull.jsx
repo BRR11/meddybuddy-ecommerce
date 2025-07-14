@@ -31,7 +31,7 @@ function Paymentsuccessfull() {
 
 const fetchData = async () => {
   try {
-    const response = await axios.get(`http://localhost:4000/api/v1/cart/${user._id}`); 
+    const response = await axios.get(`https://meddybuddy-backend-clean.onrender.com/api/v1/cart/${user._id}`); 
    const data = response.data;
 
     // Update the cartproducts state with the data from the response
@@ -133,7 +133,7 @@ useEffect(() => {
           //createOrder(dispatch, data);
           //navigate('/');
 
-          axios.post("http://localhost:4000/api/v1/order/new",data,{
+          axios.post("https://meddybuddy-backend-clean.onrender.com/api/v1/order/new",data,{
             withCredentials:true
         }).then(response => {
                 console.log('Order created successfully:', response.data);
