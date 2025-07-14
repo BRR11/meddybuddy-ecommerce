@@ -58,7 +58,7 @@ function Placeorder() {
             "description": "Payment For Order",
             "image": "",
             "order_id": paymentorder.id,
-            "callback_url": "http://localhost:4000/api/v1/paymentverification",
+            "callback_url": "https://meddybuddy-backend-clean.onrender.com/api/v1/paymentverification",
             "prefill": {
                 "name": `${user.name}`,
                 "email": `${user.email}`,
